@@ -6,7 +6,11 @@ namespace planetlogs
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Hello Solar System!");
+            App app = new App();
+            //NOTE fires off app creation, creating all data and relationships
+            app.Startup();
+            app.Run();
         }
     }
 }
